@@ -1,0 +1,15 @@
+﻿
+@{
+    ViewData["Title"] = "Download";
+}
+
+<h1>Download</h1>
+
+<form method="post" asp-action="DownloadBlob" asp-controller="Home">
+    Image Container <input type="checkbox" name="container" value="imagecontainer" /><br />
+
+    <input type="submit" value="Download" />
+</form>
+
+@ViewBag.DownloadSatus
+

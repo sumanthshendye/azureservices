@@ -1,0 +1,19 @@
+﻿
+@{
+    ViewData["Title"] = "ProcessBlob";
+}
+
+<h1>ProcessBlob</h1>
+
+@{ 
+    var blobs = ViewData["BlobLists"];
+}
+
+@foreach(var item in ViewBag.BlobLists)
+{
+<div>
+    @item.Name <span>&nbsp;</span> @Html.ActionLink("Delete", "DeleteBlob")
+</div>
+}
+
+

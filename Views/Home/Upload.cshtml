@@ -1,0 +1,18 @@
+﻿
+@{
+    ViewData["Title"] = "Upload";
+}
+
+<h1>Upload</h1>
+
+<form method="post" enctype="multipart/form-data" asp-action="UploadBlob" asp-controller="Home">
+    <input type="file" name="files" multiple/>
+    <input type="submit" value="Upload" />
+</form>
+
+<div>
+    @ViewBag.Message
+</div>
+
+
+

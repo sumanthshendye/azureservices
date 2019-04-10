@@ -1,0 +1,18 @@
+﻿
+@{
+    ViewData["Title"] = "EnQueue";
+}
+
+<h1>EnQueue</h1>
+
+<form method="post" asp-action="EnQueue" asp-controller="Queue">
+    <input type="text" name="queue" />&nbsp;
+    <input type="submit" value="EnQueue" />
+</form>
+
+
+<div>
+    @ViewBag.InserMessage
+</div>
+
+

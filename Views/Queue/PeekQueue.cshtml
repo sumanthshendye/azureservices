@@ -1,0 +1,13 @@
+﻿
+@{
+    ViewData["Title"] = "PeekQueue";
+}
+
+<h1>Dequeue</h1>
+
+@foreach(var item in ViewBag.CloudQueueMessages)
+{
+    <div>
+        @item
+    </div>
+}
